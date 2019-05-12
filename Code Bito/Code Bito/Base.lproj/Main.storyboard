@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="696" y="126"/>
         </scene>
-        <!--View Controller-->
+        <!--Line Chart View Controller-->
         <scene sceneID="0N9-SG-CeS">
             <objects>
-                <viewController id="VcY-Yc-Biu" sceneMemberID="viewController">
+                <viewController id="VcY-Yc-Biu" customClass="LineChartViewController" customModule="Code_Bito" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ux1-1y-cOf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,14 +89,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FBs-rx-DpR" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="20" y="348" width="374" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="L4Q-VN-gVa"/>
                     </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="FBs-rx-DpR" id="GFN-MC-Nl2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w5W-4d-qZU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1546" y="-659"/>
+            <point key="canvasLocation" x="1524.6376811594205" y="-649.72826086956525"/>
         </scene>
         <!--Score View Controller-->
         <scene sceneID="Xbz-bb-QZP">

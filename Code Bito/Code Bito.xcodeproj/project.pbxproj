@@ -13,6 +13,7 @@
 		0830841522858A54004BF430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0830841422858A54004BF430 /* Assets.xcassets */; };
 		0830841822858A54004BF430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0830841622858A54004BF430 /* LaunchScreen.storyboard */; };
 		08A97A802287FF060080A7E4 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A97A7F2287FF060080A7E4 /* ScoreViewController.swift */; };
+		08A97A82228819270080A7E4 /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A97A81228819270080A7E4 /* LineChartViewController.swift */; };
 		10537DBFC6F42FB2F7C90155 /* Pods_Code_Bito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A471BE1E12619DBEC7DB3C3E /* Pods_Code_Bito.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		0830841722858A54004BF430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0830841922858A54004BF430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08A97A7F2287FF060080A7E4 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		08A97A81228819270080A7E4 /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
 		2E6AC4A8D86D7AAD4175715A /* Pods-Code Bito.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Code Bito.release.xcconfig"; path = "Pods/Target Support Files/Pods-Code Bito/Pods-Code Bito.release.xcconfig"; sourceTree = "<group>"; };
 		972E7EBFD665D1A779C47870 /* Pods-Code Bito.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Code Bito.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Code Bito/Pods-Code Bito.debug.xcconfig"; sourceTree = "<group>"; };
 		A471BE1E12619DBEC7DB3C3E /* Pods_Code_Bito.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Code_Bito.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +72,7 @@
 				0830841622858A54004BF430 /* LaunchScreen.storyboard */,
 				0830841922858A54004BF430 /* Info.plist */,
 				08A97A7F2287FF060080A7E4 /* ScoreViewController.swift */,
+				08A97A81228819270080A7E4 /* LineChartViewController.swift */,
 			);
 			path = "Code Bito";
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0830841022858A51004BF430 /* ViewController.swift in Sources */,
+				08A97A82228819270080A7E4 /* LineChartViewController.swift in Sources */,
 				0830840E22858A51004BF430 /* AppDelegate.swift in Sources */,
 				08A97A802287FF060080A7E4 /* ScoreViewController.swift in Sources */,
 			);
