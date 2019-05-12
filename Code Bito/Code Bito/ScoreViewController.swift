@@ -46,7 +46,7 @@ class ScoreViewController: UIViewController {
         
         let colors = [UIColor.green,UIColor.red]
         
-        chartDataSet.colors = colors 
+        chartDataSet.colors = colors
         
         scoreChart.data =  chartData
         
