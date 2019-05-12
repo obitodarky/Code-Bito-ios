@@ -12,6 +12,7 @@
 		0830841322858A51004BF430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0830841122858A51004BF430 /* Main.storyboard */; };
 		0830841522858A54004BF430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0830841422858A54004BF430 /* Assets.xcassets */; };
 		0830841822858A54004BF430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0830841622858A54004BF430 /* LaunchScreen.storyboard */; };
+		10537DBFC6F42FB2F7C90155 /* Pods_Code_Bito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A471BE1E12619DBEC7DB3C3E /* Pods_Code_Bito.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		0830841422858A54004BF430 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0830841722858A54004BF430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0830841922858A54004BF430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E6AC4A8D86D7AAD4175715A /* Pods-Code Bito.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Code Bito.release.xcconfig"; path = "Pods/Target Support Files/Pods-Code Bito/Pods-Code Bito.release.xcconfig"; sourceTree = "<group>"; };
+		972E7EBFD665D1A779C47870 /* Pods-Code Bito.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Code Bito.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Code Bito/Pods-Code Bito.debug.xcconfig"; sourceTree = "<group>"; };
+		A471BE1E12619DBEC7DB3C3E /* Pods_Code_Bito.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Code_Bito.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10537DBFC6F42FB2F7C90155 /* Pods_Code_Bito.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0830840C22858A51004BF430 /* Code Bito */,
 				0830840B22858A51004BF430 /* Products */,
+				4443D9B795DB59B5B9452CEB /* Pods */,
+				C1126C8E99A61BB60CCE7C17 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "Code Bito";
 			sourceTree = "<group>";
 		};
+		4443D9B795DB59B5B9452CEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				972E7EBFD665D1A779C47870 /* Pods-Code Bito.debug.xcconfig */,
+				2E6AC4A8D86D7AAD4175715A /* Pods-Code Bito.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C1126C8E99A61BB60CCE7C17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A471BE1E12619DBEC7DB3C3E /* Pods_Code_Bito.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0830841C22858A54004BF430 /* Build configuration list for PBXNativeTarget "Code Bito" */;
 			buildPhases = (
+				591E93867A129BFA6C1DF313 /* [CP] Check Pods Manifest.lock */,
 				0830840622858A51004BF430 /* Sources */,
 				0830840722858A51004BF430 /* Frameworks */,
 				0830840822858A51004BF430 /* Resources */,
+				6A4562295038A6003671137A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		591E93867A129BFA6C1DF313 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Code Bito-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A4562295038A6003671137A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Code Bito/Pods-Code Bito-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Code Bito/Pods-Code Bito-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0830840622858A51004BF430 /* Sources */ = {
@@ -280,6 +345,7 @@
 		};
 		0830841D22858A54004BF430 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 972E7EBFD665D1A779C47870 /* Pods-Code Bito.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +363,7 @@
 		};
 		0830841E22858A54004BF430 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E6AC4A8D86D7AAD4175715A /* Pods-Code Bito.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
